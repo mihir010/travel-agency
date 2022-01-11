@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.txtInpt {
+  outline: none;
+  display: block;
+  margin: 11px auto;
+  font-weight: 600;
+  height: 6%;
+  width: 83%;
+  font-size: 0.9rem;
+  outline: none;
+  transition: 0.3s all;
+}
+
+.txtInpt:focus {
+  /* background-color: lightblue; */
+  width: 87%;
+  outline: none;
+  color: #0265a7;
+  /* background-color: #0265a7; */
+  border: 2px solid #0265a7;
+}
+
+textarea {
+  outline: none;
+  display: block;
+  margin: 20px auto;
+  font-weight: 600;
+  height: 45%;
+  width: 83%;
+  font-size: 0.9rem;
+  transition: 0.3s all;
+}
+
+textarea:focus {
+  width: 87%;
+  outline: none;
+  color: #0265a7;
+  /* background-color: #0265a7; */
+  border: 2px solid #0265a7;
+}
+
+.check {
+  margin-left: 29px;
+}
+
+.termsTxt {
+  display: inline;
+  font-size: 0.6rem;
+}
+
+.btn {
+  display: block;
+  margin: 17.5px auto;
+  width: 83%;
+  height: 5%;
+  background-color: #0265a7;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  /* letter-spacing: .1rem;
+    word-spacing: .1rem; */
+  transition: 0.3s all;
+}
+
+.btn:hover {
+  border: 2px solid #0265a7;
+  background-color: #fff;
+  color: #0265a7;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container::after {
+  content: "";
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  background: url("main\ bg\ 2.jpg") no-repeat center center/cover;
+  /* background: lightcyan; */
+  position: absolute;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.container-box {
+  display: flex;
+  /* border: 2px solid red; */
+  height: 70vh;
+  width: 55vw;
+  margin: auto;
+  box-shadow: 0 3px 25px rgb(0 0 0 / 30%);
+}
+
+.left {
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+
+.right {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background-color: white;
+}
+
+.right h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.right h1::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 32%;
+  background-color: #0265a7;
+  right: 34%;
+  top: 37px;
+  border-radius: 11px;
+}
+
+.left::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid blue; */
+  background: url("left\ bg.jpg") no-repeat center center/cover;
+}
